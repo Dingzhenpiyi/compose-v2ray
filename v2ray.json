@@ -1,0 +1,33 @@
+{
+ "log": {
+  "loglevel": "warning",
+  "access": "/var/log/v2ray/access.log",
+  "error": "/var/log/v2ray/error.log"
+ },
+  "inbounds": [
+    {
+      "port": 10000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "64338d43-4535-4d66-ad0b-21f7f47600e5",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v2ray&$"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}

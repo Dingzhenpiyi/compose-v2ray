@@ -1,0 +1,12 @@
+d.mokeiteam.com
+{ 
+  log {
+    output file /var/log/caddy/caddy.log
+  }
+  tls charles@hotmail.com
+  @websockets {
+    header Connection Upgrade
+    header Upgrade websocket
+  }
+  reverse_proxy @websockets v2ray:10000
+}
