@@ -16,7 +16,7 @@ v2ray+caddy+tls在docker上部署，使用docker-compose管理
   ```
 
   ```sh
-  $ timedatectl set-timezone Asia/Shanghai
+  $ sudo timedatectl set-timezone Asia/Shanghai
   ```
 
 
