@@ -1,4 +1,4 @@
-d.mokeiteam.com
+域名
 { 
   log {
     output file /var/log/caddy/caddy.log
