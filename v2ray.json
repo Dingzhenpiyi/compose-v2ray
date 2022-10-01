@@ -6,13 +6,13 @@
  },
   "inbounds": [
     {
-      "port": 10000,
+      "port": 10000, //与 caddy里对应
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
             "id": "你生成的uuid",
-            "alterId": 64
+            "alterId": 0 //新版改为0
           }
         ]
       },
