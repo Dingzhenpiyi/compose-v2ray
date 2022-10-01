@@ -108,7 +108,7 @@ $ docker-compose -v
 ###### 如无git，则需要安装(sudo yum install -y git)
 
 ```sh
-$ git clone https://github.com/CharlesAndsen/compose-v2ray.git
+$ git clone https://github.com/Dingzhenpiyi/compose-v2ray.git
 ```
 
 ###### 进入compose-v2ray, 并创建文件夹
