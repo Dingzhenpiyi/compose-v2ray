@@ -8,5 +8,5 @@
     header Connection Upgrade
     header Upgrade websocket
   }
-  reverse_proxy @websockets v2ray:10000
+  reverse_proxy @websockets v2ray:10000  //端口与V2ray配置信息相同
 }
