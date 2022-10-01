@@ -9,7 +9,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     expose: 
-      - 10000
+      - 10000 //与v2ray提供的端口一致
   caddy:
     image: caddy
     container_name: caddy
