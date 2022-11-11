@@ -9,7 +9,7 @@ mydomain.me {
         curves x25519
     }
     @v2ray_websocket {
-        path /Vd3oodtvLCw4uTzX
+        path /v2ray&$         //与v2ray.json里path相同
         header Connection Upgrade
         header Upgrade websocket
     }
