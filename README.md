@@ -7,16 +7,15 @@ v2ray+caddy+tls在docker上部署，使用docker-compose管理
 * ## 登录服务器(当前centos8)时区及设置时区
 
   ```sh
-  $ date //查看时间
+  $ date -R  //查看当前时区
   ```
 
   ```sh
-  $ timedatectl list-timezones|grep Shanghai
-  Asia/Shanghai
+  $ rm -rf /etc/localtime  //删除本地的时间文件
   ```
 
   ```sh
-  $ sudo timedatectl set-timezone Asia/Shanghai
+  $ ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime  //加入上海时区
   ```
 
 
