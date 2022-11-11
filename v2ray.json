@@ -19,7 +19,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/v2ray&$"
+          "path": "/v2ray&$"  //尽量不要用v2ray、ray，自己修改大小字母组合
         }
       }
     }
