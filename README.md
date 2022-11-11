@@ -115,7 +115,7 @@ $ git clone https://github.com/Dingzhenpiyi/compose-v2ray.git
 
 ```sh
 $ cd compose-v2ray
-$ mkdir -p log/caddy log/v2ray caddy/config caddy/data
+$ mkdir -p config data log/caddy log/v2ray
 ```
 
 ## 修改配置文件
