@@ -10,16 +10,16 @@ services:
       - /etc/localtime:/etc/localtime:ro
     expose: 
       - 10000 //与v2ray提供的端口一致
+      
   caddy:
-    image: caddy
+    image: caddy:2.6.1
     container_name: caddy
     volumes: 
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./log/caddy:/var/log/caddy
-      - ./caddy/data:/data
-      - ./caddy/config:/config
+      - ./data:/data
+      - ./log/caddy:/etc/caddy
+      - ./config:/config
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports: 
       - "443:443"
-      - "80:80"
