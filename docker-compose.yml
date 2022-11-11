@@ -15,11 +15,10 @@ services:
     container_name: caddy
     volumes: 
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./log/caddy:/var/log/caddy
+      - ./log/caddy:/etc/caddy
       - ./caddy/data:/data
       - ./caddy/config:/config
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports: 
       - "443:443"
-      - "80:80"
