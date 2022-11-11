@@ -15,7 +15,7 @@ services:
     container_name: caddy
     volumes: 
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./log/caddy:/etc/caddy
+      - ./log/caddy:/var/log/caddy
       - ./caddy/data:/data
       - ./caddy/config:/config
       - /etc/timezone:/etc/timezone:ro
